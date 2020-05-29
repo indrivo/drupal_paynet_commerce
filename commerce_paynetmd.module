@@ -1,0 +1,35 @@
+<?php
+
+/**
+ * @file
+ * Contains commerce_paynetmd.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function commerce_paynetmd_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the commerce_paynetmd module.
+    case 'help.page.commerce_paynetmd':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Provides payment functionality.') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
+/**
+ * Implements hook_theme().
+ */
+function commerce_paynetmd_theme() {
+  return [
+    'commerce_paynetmd' => [
+      'render element' => 'children',
+    ],
+  ];
+}

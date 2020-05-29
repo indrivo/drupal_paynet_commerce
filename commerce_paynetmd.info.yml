@@ -1,0 +1,8 @@
+name: 'Paynet MD'
+type: module
+description: 'Provides payment functionality.'
+core: 8.x
+package: 'Indrivo'
+dependencies:
+  - commerce:commerce
+  - commerce:commerce_payment
