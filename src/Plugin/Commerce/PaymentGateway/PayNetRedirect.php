@@ -184,7 +184,7 @@ class PayNetRedirect extends OffsitePaymentGatewayBase {
 //Message - Error description
 
 //    /** @var PaynetCommerceService $api */
-//    $api = \Drupal::service('commerce_paynetmd.panet_commerse_api');
+//    $api = \Drupal::service('commerce_paynetmd.panet_commerce_api');
 //
 //    $checkObj = $api->PaymentGet($order->id());
 //    if($checkObj->IsOk()) {

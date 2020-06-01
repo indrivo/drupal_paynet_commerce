@@ -2,6 +2,6 @@ services:
   logger.channel.commerce_paynetmd:
     parent: logger.channel_base
     arguments: ['commerce_paynetmd']
-  commerce_paynetmd.panet_commerse_api:
+  commerce_paynetmd.panet_commerce_api:
     class: Drupal\commerce_paynetmd\PaynetCommerceService
     arguments: []

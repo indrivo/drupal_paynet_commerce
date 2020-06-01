@@ -55,7 +55,7 @@ class RedirectCheckoutForm extends BasePaymentOffsiteForm {
     }
 
     /** @var PaynetCommerceService $api */
-    $api = \Drupal::service('commerce_paynetmd.panet_commerse_api');
+    $api = \Drupal::service('commerce_paynetmd.panet_commerce_api');
     $api->setPayment($payment);
     $prequest = new PaynetRequest();
     $prequest->ExternalID = $order->id();

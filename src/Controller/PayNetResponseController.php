@@ -35,7 +35,7 @@ class PayNetResponseController extends ControllerBase {
     $order_id = is_numeric(\Drupal::request()->query->get('id')) ? \Drupal::request()->query->get('id') : NULL;
     if ($order_id) {
       /** @var PaynetCommerceService $api */
-      $api = \Drupal::service('commerce_paynetmd.panet_commerse_api');
+      $api = \Drupal::service('commerce_paynetmd.panet_commerce_api');
       // $order = Order::load($order_id);
 
       $checkObj = $api->PaymentGet($order_id);
